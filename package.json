@@ -4,6 +4,7 @@
   "description": "single page app where a user can Sign Up (sign up should only write the user into mongodb database with a node js backend using express). Once logged in users should have a section where their repositories and favorite repos are listed (Oauth will be required to access the API) User Stories ❏ As a user I want to be able to Sign Up to the web app ❏ As a user I want to be able to Login after Signing Up into the app ❏ As a user I want to list all repositories under my Github user ❏ As a user I want to search through all my repositories and create a list of my favorite repos",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
@@ -25,12 +26,14 @@
     "express-handlebars": "^6.0.2",
     "express-openid-connect": "^2.5.2",
     "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
     "method-override": "^3.0.0",
     "mongoose": "^6.1.8",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "npm-check-updates": "^12.2.1"
   }
 }

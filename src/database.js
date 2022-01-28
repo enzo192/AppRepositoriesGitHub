@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/list-db-app', {
+const { LIST_APP_MONGODB_HOST, LIST_APP_MONGODB_DATABASE } = process.env;
+const MONGODB_URI = `mongodb://${LIST_APP_MONGODB_HOST}/${LIST_APP_MONGODB_DATABASE}`;
+
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

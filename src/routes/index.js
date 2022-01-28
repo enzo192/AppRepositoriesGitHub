@@ -1,14 +1,14 @@
-const express = require('express');
-const router = express.Router();
+// const express = require('express');
+// const router = express.Router();
 
 
-router.get('/', (req, res) => {
-    res.send('Index');
-});
+// router.get('/', (req, res) => {
+//     res.render('index');
+// });
 
-router.get('/about', (req, res) => {
-    res.send('about');
-});
+// router.get('/about', (req, res) => {
+//     res.render('about');
+// });
 
 
-module.exports = router;
+// module.exports = router;
