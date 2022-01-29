@@ -1,13 +1,23 @@
-// const express = require('express');
-// const router = express.Router();
+const { Router } = require('express');
+const router = Router();
 
-// router.get('/users/signin', (req, res) => {
-//     res.send('Ingresando a la app');
-// });
+const { renderSignupForm, 
+    signup, 
+    renderSigninForm, 
+    signin, 
+    logout
+} = require('../controllers/users.controller');
 
-// router.get('/users/signup', (req, res) => {
-//     res.send('Formulario de autenticacion');
-// });
+router.get('/users/signup', renderSignupForm);
+
+router.post('/users/signup', signup);
+
+router.get('/users/signin', renderSigninForm);
+
+router.post('/users/signin', signin);
+
+router.get('/users/logout', logout);
 
 
-// module.exports = router;
+
+module.exports = router;

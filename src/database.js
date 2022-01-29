@@ -5,7 +5,7 @@ const MONGODB_URI = `mongodb://${LIST_APP_MONGODB_HOST}/${LIST_APP_MONGODB_DATAB
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 })
 
     .then(db => console.log('DB is connected'))
